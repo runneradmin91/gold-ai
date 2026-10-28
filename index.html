@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a0d12">
+<meta name="description" content="لوحة تحليل الذهب مقابل الدولار XAU/USD، مخطط السوق والتحليل الفني والأخبار وإدارة المخاطر.">
+<title>ذهب AI | تحليل الذهب XAU/USD</title>
+<link rel="preconnect" href="https://s3.tradingview.com"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#home"><span class="brand-mark">Au</span><span><b>ذهب <em>AI</em></b><small>مركز تحليل XAU/USD</small></span></a><div class="top-status"><span class="pulse"></span><span id="feedStatus">مخطط السوق الخارجي</span></div></header>
+<main id="home">
+<section class="hero"><div><div class="eyebrow">لوحة الأسواق · المعادن</div><h1>الذهب مقابل الدولار</h1><p>حلّل الاتجاه، تابع الأخبار، واتخذ قرارك على أساس بيانات واضحة.</p></div><div class="symbol-pill">XAU/USD <span>●</span></div></section>
+<section class="notice"><span class="notice-icon">ⓘ</span><p><b>تنبيه البيانات:</b> السعر والمخطط يعتمدان على مزوّد TradingView وقد يختلفان عن سعر وسيطك أو يتأخران. إشارات التحليل ليست ضماناً للربح. لا يوجد اتصال مباشر بـ MT5 في نسخة GitHub الثابتة.</p></section>
+<section class="metrics">
+<div class="metric"><span>الأداة</span><strong>Gold / USD</strong><small>الذهب الفوري</small></div>
+<div class="metric"><span>حالة الإشارة</span><strong class="neutral" id="signalLabel">بانتظار بيانات موثوقة</strong><small id="signalSub">لا توجد توصية مؤكدة حالياً</small></div>
+<div class="metric"><span>توقيت التحليل</span><strong id="clock">—</strong><small>توقيت جهازك</small></div>
+</section>
+<section class="panel chart-panel"><div class="panel-head"><div><h2>مخطط السوق</h2><p>شموع وأسعار من TradingView</p></div><a class="text-link" href="https://www.tradingview.com/symbols/XAUUSD/" target="_blank" rel="noopener">فتح المصدر ↗</a></div>
+<div class="tradingview-widget-container"><div id="tradingview_chart" class="tv-chart"></div></div></section>
+<section class="grid-two">
+<div class="panel"><div class="panel-head"><div><h2>مركز الإشارات</h2><p>لا نعرض شراء أو بيع بدون بيانات قابلة للتحقق</p></div><span class="tag">تحليل</span></div>
+<div class="signal-card"><div class="signal-symbol">⌁</div><div><strong>الإشارة غير مفعّلة</strong><p>اربط مزوّد بيانات شموع موثوقاً وخادماً للتحليل حتى تُحسب المؤشرات على أسعار فعلية.</p></div></div>
+<div class="mini-list"><div><span>الاتجاه العام</span><b>بانتظار البيانات</b></div><div><span>RSI / MACD</span><b>غير محسوبين</b></div><div><span>الدعم والمقاومة</span><b>غير محسوبين</b></div></div>
+</div>
+<div class="panel"><div class="panel-head"><div><h2>الأخبار المؤثرة</h2><p>مصادر لمتابعة العوامل المحركة للذهب</p></div><span class="tag">أخبار</span></div>
+<a class="news-link" href="https://www.federalreserve.gov/newsevents.htm" target="_blank" rel="noopener"><span class="news-icon">$</span><span><b>قرارات الاحتياطي الفيدرالي</b><small>الفائدة وتوقعات السياسة النقدية</small></span><span class="arrow">↗</span></a>
+<a class="news-link" href="https://www.bls.gov/news.release/cpi.htm" target="_blank" rel="noopener"><span class="news-icon">%</span><span><b>بيانات التضخم الأمريكية</b><small>CPI وتأثيره المحتمل على الدولار</small></span><span class="arrow">↗</span></a>
+<a class="news-link" href="https://www.bls.gov/news.release/empsit.htm" target="_blank" rel="noopener"><span class="news-icon">▥</span><span><b>تقرير الوظائف الأمريكية</b><small>الوظائف والأجور والبطالة</small></span><span class="arrow">↗</span></a>
+<div class="news-foot">هذه روابط للمصادر الأصلية وليست خلاصة أخبار مباشرة أو تحليل ذكاء اصطناعي.</div></div>
+</section>
+<section class="panel risk-panel"><div class="panel-head"><div><h2>حاسبة المخاطرة</h2><p>حساب توضيحي لحجم المخاطرة قبل الدخول</p></div><span class="tag">إدارة رأس المال</span></div>
+<div class="risk-form"><label>رأس المال بالدولار<input id="capital" type="number" min="1" value="1000" inputmode="decimal"></label><label>نسبة المخاطرة %<input id="riskPct" type="number" min="0.1" max="5" step="0.1" value="1" inputmode="decimal"></label><label>مسافة وقف الخسارة بالدولار<input id="stopDistance" type="number" min="0.01" step="0.01" value="5" inputmode="decimal"></label><button id="calcBtn" type="button">احسب المخاطرة</button></div>
+<div class="risk-result"><span>المبلغ المعرض للمخاطرة</span><strong id="riskResult">$10.00</strong><small id="riskExplain">الحساب لا يحدد حجم اللوت؛ قيمة النقطة تختلف حسب عقد وسيطك.</small></div></section>
+<section class="panel setup-panel"><div class="panel-head"><div><h2>شلون نفعّل التحليل الذكي؟</h2><p>حتى تكون الإشارات مبنية على بيانات حقيقية</p></div></div><ol class="setup-list"><li><b>مصدر سعر موثوق</b><span>واجهة API أو بيانات وسيطك، مع توضيح وقت التحديث.</span></li><li><b>خادم آمن</b><span>لإخفاء مفاتيح API وربط الأخبار وخدمة الذكاء الاصطناعي. لا تضع المفاتيح داخل ملفات GitHub العامة.</span></li><li><b>اختبار تاريخي ومتابعة الأداء</b><span>اختبار الاستراتيجية على بيانات سابقة ثم حساب الدقة الفعلية خارج العينة؛ لا يكفي وصفها بأنها ذكية.</span></li></ol><div class="bottom-note">نسخة الواجهة جاهزة لـ GitHub Pages. السعر اللحظي المضمون، ملخص الأخبار بالذكاء الاصطناعي، وإشارات التداول الآلية تحتاج ربطاً خلفياً بمصادر مدفوعة أو موثقة.</div></section>
+<footer><span>ذهب AI · أداة معلومات وتحليل</span><span>ليست نصيحة مالية أو ضماناً للربح</span></footer>
+</main>
+<script src="https://s3.tradingview.com/tv.js"></script><script src="app.js"></script>
+</body></html>
